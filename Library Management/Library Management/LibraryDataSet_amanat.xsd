@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LibraryDataSet_amanat" targetNamespace="http://tempuri.org/LibraryDataSet_amanat.xsd" xmlns:mstns="http://tempuri.org/LibraryDataSet_amanat.xsd" xmlns="http://tempuri.org/LibraryDataSet_amanat.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LibraryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Library_Management.Properties.Settings.GlobalReference.Default.LibraryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="amanatTableAdapter" GeneratorDataComponentClassName="amanatTableAdapter" Name="amanat" UserDataComponentName="amanatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryConnectionString (Settings)" DbObjectName="dbo.amanat" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT books, users FROM dbo.amanat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="books" DataSetColumn="books" />
+              <Mapping SourceColumn="users" DataSetColumn="users" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LibraryDataSet_amanat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LibraryDataSet_amanat" msprop:Generator_UserDSName="LibraryDataSet_amanat">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="amanat" msprop:Generator_TableClassName="amanatDataTable" msprop:Generator_TableVarName="tableamanat" msprop:Generator_TablePropName="amanat" msprop:Generator_RowDeletingName="amanatRowDeleting" msprop:Generator_RowChangingName="amanatRowChanging" msprop:Generator_RowEvHandlerName="amanatRowChangeEventHandler" msprop:Generator_RowDeletedName="amanatRowDeleted" msprop:Generator_UserTableName="amanat" msprop:Generator_RowChangedName="amanatRowChanged" msprop:Generator_RowEvArgName="amanatRowChangeEvent" msprop:Generator_RowClassName="amanatRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="books" msprop:Generator_ColumnVarNameInTable="columnbooks" msprop:Generator_ColumnPropNameInRow="books" msprop:Generator_ColumnPropNameInTable="booksColumn" msprop:Generator_UserColumnName="books" type="xs:int" />
+              <xs:element name="users" msprop:Generator_ColumnVarNameInTable="columnusers" msprop:Generator_ColumnPropNameInRow="users" msprop:Generator_ColumnPropNameInTable="usersColumn" msprop:Generator_UserColumnName="users" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:amanat" />
+      <xs:field xpath="mstns:books" />
+      <xs:field xpath="mstns:users" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

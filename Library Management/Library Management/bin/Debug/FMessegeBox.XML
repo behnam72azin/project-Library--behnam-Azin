@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FMessegeBox</name>
+    </assembly>
+    <members>
+        <member name="T:FMessegeBox.FarsiMessegeBox">
+            <summary>
+            FmessegeBox.FarsiMessegeBox 
+            provides an static method to show a Farsi Messege Box with messege, title, bottuns, icons and ... .
+            </summary>
+        </member>
+        <member name="M:FMessegeBox.FarsiMessegeBox.Show(System.String)">
+            <summary>
+            Displays a messege box that can contain text,buttons and icons to infom and struct user.
+            </summary>
+            <param name="messege">The messege that will be displayed in messege box</param>
+            <returns>Returns DialogResult.OK</returns>
+        </member>
+        <member name="M:FMessegeBox.FarsiMessegeBox.Show(System.String,System.String)">
+            <summary>
+            Displays a messege box that can contain text,buttons and icons to infom and struct user.
+            </summary>
+            <param name="messege">The messege that will be displayed in messege box</param>
+            <param name="title">The tiltle of messege box</param>
+            <returns>Returns DialogResult.OK</returns>
+        </member>
+        <member name="M:FMessegeBox.FarsiMessegeBox.Show(System.String,System.String,FMessegeBox.FMessegeBoxButtons)">
+            <summary>
+            Displays a messege box that can contain text,buttons and icons to infom and struct user.
+            </summary>
+            <param name="messege">The messege that will be displayed in messege box</param>
+            <param name="title">The tiltle of messege box</param>
+            <param name="FMessegeBoxButtons">Button(s) of messege box</param>
+            <returns>Returns DialogResult.OK|Cancel|Yes|No</returns>
+        </member>
+        <member name="M:FMessegeBox.FarsiMessegeBox.Show(System.String,System.String,FMessegeBox.FMessegeBoxButtons,FMessegeBox.FMessegeBoxIcons)">
+            <summary>
+            Displays a messege box that can contain text,buttons and icons to infom and struct user.
+            </summary>
+            <param name="messege">The messege that will be displayed in messege box</param>
+            <param name="title">The tiltle of messege box</param>
+            <param name="FMessegeBoxButtons">Button(s) of messege box</param>
+            <param name="FMessegeBoxIcons">The Icon that will be displayed in messege box</param>
+            <returns>Returns DialogResult.OK|Cancel|Yes|No</returns>
+        </member>
+        <member name="T:FMessegeBox.FMessegeBoxButtons">
+            <summary>
+            enum FMessegeBox.FMessegeBoxButtons
+            provides buttons for messege box.
+            </summary>
+        </member>
+        <member name="T:FMessegeBox.FMessegeBoxIcons">
+            <summary>
+            enum FMessegeBox.FMessegeBoxIcons
+            provides icons for messege box.  
+            </summary>
+        </member>
+        <member name="T:FMessegeBox.FMessegeBoxDefaultButton">
+            <summary>
+            enum FMessegeBox.FMessegeBoxButton
+            specifies messege box default button.
+            </summary>
+        </member>
+        <member name="T:FMessegeBox.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FMessegeBox.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FMessegeBox.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
